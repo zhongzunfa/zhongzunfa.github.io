@@ -1,0 +1,314 @@
+#sidebar {
+  background: #fff none repeat scroll 0 0;
+  margin-top: 40px;
+}
+.highlight {
+  background: #f6f8fa none repeat scroll 0 0;
+  color: #4d4d4c;
+}
+#footer {
+  background-color: #fff;
+  border-top: 1.5px solid #00b32f;
+  color: #565a5f;
+  font-size: 16px;
+  padding: 20px 0;
+  text-align: center;
+}
+.foot-count {
+  color: #009688;
+  font-size: 1.3em;
+  font-weight: bold;
+  padding: 0 5px;
+}
+#busuanzi_value_page_pv {
+  color: #009688;
+  font-weight: bold;
+}
+.highlight {
+  color: #4d4d4c;
+  background: #f6f8fa;
+}
+#single-meta {
+  top: 15px;
+  right: 15px;
+  float: right;
+}
+#single-meta .views,
+#single-meta li a {
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+  color: #999;
+  display: block;
+  line-height: 26px;
+  margin: 0 5px 0 0;
+  padding: 0 10px;
+}
+#single-meta li {
+  float: left;
+}
+@-webkit-keyframes mashape-ape-animation {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 200% 0%;
+  }
+}
+.ape {
+  display: block;
+  max-width: 240px;
+  max-hegight: 250px;
+  height: 250px;
+  margin: 0 10 auto;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0;
+  background-image: url("/css/images/ape-sprite.png");
+  background-size: 100% auto;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.ape:hover {
+  -webkit-animation-play-state: paused;
+}
+.blog-summary {
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 32px;
+  color: #333;
+  padding: 16px 30px;
+  background: #f9f9f9;
+  table-layout: fixed;
+  word-break: break-all;
+  overflow: hidden;
+}
+#cyReward #cy-reward-pop .power-cy {
+  display: none;
+}
+#cyHotusers .hotusers-header {
+  display: none;
+}
+#cyReward #cy-reward-pop .cy-reward-txt {
+  display: none;
+}
+.article-entry blockquote {
+  font-family: Georgia, "Times New Roman", "Microsoft Yahei", serif;
+  margin: 15px auto;
+  border: 1px solid #ddd;
+  padding: 10px 15px 5px;
+  background-color: #f6f8fa;
+  font-size: 15px;
+  line-height: 20px;
+  border-left: 2px solid #f57e42;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: 0 0 1px #d9d9d9;
+  box-shadow: 0 0 1px #d9d9d9;
+}
+.article-entry blockquote:before {
+  font-family: Dosis, 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  position: absolute;
+  top: 9px;
+  left: -12px;
+  width: 20px;
+  height: 20px;
+  content: '!';
+  text-align: center;
+  color: #fff;
+  border-radius: 100%;
+  background-color: #f66 !important;
+}
+.article-entry blockquote p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 5px;
+  font-size: 15px;
+  line-height: 20px;
+}
+.article-inner {
+  overflow: hidden;
+  border-radius: 21px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+#profile .inner {
+  margin-top: 40px;
+  background: #fff;
+  border-radius: 21px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+#sidebar {
+  background: #fff none repeat scroll 0 0;
+  margin-top: 40px;
+  border-radius: 21px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+.article-entry img,
+.article-entry video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+  border: 1px solid #ddd;
+  padding: 3px;
+}
+.article-entry hr,
+.widget hr {
+  margin: 20px 0;
+  height: 2px;
+  border: none;
+  background-color: #ddd;
+  background-image: repeating-linear-gradient(-45deg, #fff, #fff 4px, transparent 4px, transparent 8px);
+}
+.article-entry h2,
+.widget h2 {
+  font-size: 1.5em;
+  font-weight: normal;
+  margin: 10px -10px 10px -12px;
+  padding: 10px 10px 4px 10px;
+  line-height: 18px;
+  border-left: 4px solid #6ce26c;
+  background-color: #fbfbfb;
+}
+.post-description {
+  text-indent: 2em;
+  border-radius: 0.5em;
+  border: 1px solid #ddd;
+  padding: 0.5em 0.7em;
+  margin-top: 15px;
+  font-size: 14px;
+  text-align: left;
+}
+.toc-article {
+  background: #f9f9f9;
+  margin: 2em 0 0 0.2em;
+  padding: 1em;
+  border-radius: 0px;
+  z-index: 100;
+  border: 1px solid #ccc;
+  max-width: 300px;
+  min-width: 200px;
+  max-height: 500px;
+/* overflow-y: auto; */
+  -webkit-box-shadow: 5px 5px 2px #ccc;
+  box-shadow: 5px 5px 2px #ccc;
+  font-size: 12px;
+  padding: 10px;
+  position: fixed;
+  right: 35px;
+  top: 129px;
+}
+.toc-article .toc-close {
+  font-weight: 700;
+  font-size: 20px;
+  cursor: pointer;
+  float: right;
+  color: #ccc;
+}
+.show-toc-btn {
+  display: none;
+  z-index: 10;
+  width: 30px;
+  min-height: 14px;
+  overflow: hidden;
+  padding: 4px 6px 8px 5px;
+  border: 1px solid #ddd;
+  border-right: none;
+  position: fixed;
+  right: 40px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+.show-toc-btn .btn-bg {
+  margin-top: 2px;
+  display: block;
+  width: 16px;
+  height: 14px;
+  background: url("http://7xtawy.com1.z0.glb.clouddn.com/show.png") no-repeat;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  background-size: 100%;
+}
+.show-toc-btn .btn-text {
+  color: #999;
+  font-size: 12px;
+}
+#profile .inner .social-links > table td {
+  text-align: left;
+  font-size: 24px;
+}
+#tNum {
+  display: block;
+  padding: 4px;
+  line-height: 40px;
+  border-radius: 50%;
+  font-size: 16px;
+  color: #fff;
+  height: 40px;
+  width: 40px;
+  margin: 0 auto;
+  margin-bottom: 3px;
+  background-color: #00bcd4;
+}
+#tagNum {
+  display: block;
+  padding: 4px;
+  line-height: 40px;
+  border-radius: 50%;
+  font-size: 16px;
+  color: #fff;
+  height: 40px;
+  width: 40px;
+  margin: 0 auto;
+  margin-bottom: 3px;
+  background-color: #f06292;
+}
+.highlight .gutter {
+  float: left;
+}
+figcaption .caption {
+  font-weight: 700;
+}
+.highlight figcaption a {
+  float: right;
+  color: #4d4d4c;
+}
+@-moz-keyframes mashape-ape-animation {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 200% 0%;
+  }
+}
+@-webkit-keyframes mashape-ape-animation {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 200% 0%;
+  }
+}
+@-o-keyframes mashape-ape-animation {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 200% 0%;
+  }
+}
+@keyframes mashape-ape-animation {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 200% 0%;
+  }
+}
