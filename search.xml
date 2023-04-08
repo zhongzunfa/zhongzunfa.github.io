@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>6、增加评论系统</title>
-    <url>/2022/06/22/add-comments/</url>
-    <content><![CDATA[<h3 id="1、注册账号和安装"><a href="#1、注册账号和安装" class="headerlink" title="1、注册账号和安装"></a>1、注册账号和安装</h3><p>​官网地址：<a href="https://www.livere.com/">https://www.livere.com/</a> 是韩国人的，首先是注册一个账号。 登录成功后选择 ：安装<br>​ <img src="/2022/06/22/add-comments/16556211254730.jpg" alt="-w898"><br>点击现在安装，在填写域名和用途就可以了</p>
-<p>现在安装，立刻会跳转到代码生成页面，提供给嵌入到不同页面的代码，代码里含有data-uid<br><img src="/2022/06/22/add-comments/16556212630554.jpg" alt="-w980"></p>
-<h3 id="2、hexo进行配置"><a href="#2、hexo进行配置" class="headerlink" title="2、hexo进行配置"></a>2、hexo进行配置</h3><p>在next主题的_config.yml文件中找到如下的配置<br><img src="/2022/06/22/add-comments/16556213917907.jpg" alt="-w769"><br>启动you uid改成你申请的即可。</p>
-<p>3、本地部署验证：<br>本地发布执行hexo s 部署<br><img src="/2022/06/22/add-comments/16556216826175.jpg" alt="-w679"></p>
-]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-  </entry>
-  <entry>
     <title>5、创建文章(图文并茂的)</title>
     <url>/2022/06/22/article-with-pic/</url>
     <content><![CDATA[<p>创建文章(图文并茂的), 注意点: 要创建图文并文章需要修改Hexo下的_config.yml文件和安装一个组件。</p>
@@ -84,6 +72,21 @@
       </categories>
   </entry>
   <entry>
+    <title>6、增加评论系统</title>
+    <url>/2022/06/22/add-comments/</url>
+    <content><![CDATA[<h3 id="1、注册账号和安装"><a href="#1、注册账号和安装" class="headerlink" title="1、注册账号和安装"></a>1、注册账号和安装</h3><p>​官网地址：<a href="https://www.livere.com/">https://www.livere.com/</a> 是韩国人的，首先是注册一个账号。 登录成功后选择 ：安装<br>​ <img src="/2022/06/22/add-comments/16556211254730.jpg" alt="-w898"><br>点击现在安装，在填写域名和用途就可以了</p>
+<p>现在安装，立刻会跳转到代码生成页面，提供给嵌入到不同页面的代码，代码里含有data-uid<br><img src="/2022/06/22/add-comments/16556212630554.jpg" alt="-w980"></p>
+<h3 id="2、hexo进行配置"><a href="#2、hexo进行配置" class="headerlink" title="2、hexo进行配置"></a>2、hexo进行配置</h3><p>在next主题的_config.yml文件中找到如下的配置<br><img src="/2022/06/22/add-comments/16556213917907.jpg" alt="-w769"><br>启动you uid改成你申请的即可。</p>
+<h3 id="3、本地部署验证："><a href="#3、本地部署验证：" class="headerlink" title="3、本地部署验证："></a>3、本地部署验证：</h3><p>本地发布执行hexo s 部署<br><img src="/2022/06/22/add-comments/16556216826175.jpg" alt="-w679"></p>
+<h3 id="4、注意点："><a href="#4、注意点：" class="headerlink" title="4、注意点："></a>4、注意点：</h3><p>来得力这个评论系统隔段时间就会出现韩国广告，需要进行隐藏，具体操作如下：<br>博客根目录&#x2F;themes&#x2F;layout&#x2F;_scripts&#x2F;third-party&#x2F;comments&#x2F;目录中找到livere.swig文件添加如下代码</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">        #taboola-livere &#123; display: none;&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+<p>详细截图如下：<br><img src="/2022/06/22/add-comments/remove-liver-gg.jpg" alt="-w770"></p>
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+  </entry>
+  <entry>
     <title></title>
     <url>/2023/04/02/create-new-article-setting/</url>
     <content><![CDATA[<h1 id="7、新建文章设置点："><a href="#7、新建文章设置点：" class="headerlink" title="7、新建文章设置点："></a>7、新建文章设置点：</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># ！！！！！！！！！！</span><br><span class="line"># 每一项的 : 后面均有一个空格</span><br><span class="line"># 且 : 为英文符号</span><br><span class="line"># ！！！！！！！！！！</span><br><span class="line"></span><br><span class="line">title:</span><br><span class="line"># 文章标题，可以为中文</span><br><span class="line"></span><br><span class="line">date:</span><br><span class="line"># 建立日期，如果自己手动添加，请按固定格式</span><br><span class="line"># 就算不写，页面每篇文章顶部的发表于……也能显示</span><br><span class="line"># 只要在主题配置文件中，配置了 created_at 就行</span><br><span class="line"># 那为什么还要自己加上？</span><br><span class="line"># 自定义文章发布的时间</span><br><span class="line"></span><br><span class="line">updated:</span><br><span class="line"># 更新日期，其它与上面的建立日期类似</span><br><span class="line"># 不过在页面每篇文章顶部，是更新于……</span><br><span class="line"># 在主题配置文件中，是 updated_at</span><br><span class="line"></span><br><span class="line">permalink:</span><br><span class="line"># 若站点配置文件下的 permalink 配置了 title</span><br><span class="line"># 则可以替换文章 URL 里面的 title（文章标题）</span><br><span class="line"></span><br><span class="line">categories:</span><br><span class="line"># 分类，支持多级，比如：</span><br><span class="line"># - technology</span><br><span class="line"># - computer</span><br><span class="line"># - computer-aided-art</span><br><span class="line"># 则为 technology/computer/computer-aided-art</span><br><span class="line"># （不适用于 layout: page）</span><br><span class="line"></span><br><span class="line">tags:</span><br><span class="line"># 标签</span><br><span class="line"># 多个可以这样写 [标签1,标签2,标签3]</span><br><span class="line"># （不适用于 layout: page）</span><br><span class="line"></span><br><span class="line">description:</span><br><span class="line"># 文章的描述，在每篇文章标题下方显示</span><br><span class="line"># 并且作为网页的 description 元数据</span><br><span class="line"># 如果不写，则自动取 &lt;!-- more --&gt;</span><br><span class="line"># 之前的文字作为网页的 description 元数据</span><br><span class="line"></span><br><span class="line">keywords:</span><br><span class="line"># 关键字，并且作为网页的 keywords 元数据</span><br><span class="line"># 如果不写，则自动取 tags 里的项</span><br><span class="line"># 作为网页的 keywords 元数据</span><br><span class="line"></span><br><span class="line">comments:</span><br><span class="line"># 是否开启评论</span><br><span class="line"># 默认值是 true</span><br><span class="line"># 要关闭写 false</span><br><span class="line"></span><br><span class="line">layout:</span><br><span class="line"># 页面布局，默认值是 post，默认值可以在</span><br><span class="line"># 站点配置文件中修改 default_layout</span><br><span class="line"># 另：404 页面可能用到，将其值改为 false</span><br><span class="line"></span><br><span class="line">type:</span><br><span class="line"># categories，目录页面</span><br><span class="line"># tags，标签页面</span><br><span class="line"># picture，用来生成 group-pictures</span><br><span class="line"># quote？</span><br><span class="line"># https://io-oi.me/tech/hello-world/</span><br><span class="line"></span><br><span class="line">photos:</span><br><span class="line"># Gallery support，用来支持画廊╱相册，用法如下：</span><br><span class="line"># - photo_url_1</span><br><span class="line"># - photo_url_2</span><br><span class="line"># - photo_url_3</span><br><span class="line"># https://io-oi.me/tech/hello-world/</span><br><span class="line"></span><br><span class="line">link:</span><br><span class="line"># 文章的外部链接</span><br><span class="line"># https://io-oi.me/tech/hello-world/</span><br><span class="line"></span><br><span class="line">image:</span><br><span class="line"># 自定义的文章摘要图片，只在页面展示，文章内消失</span><br><span class="line"># 此项只有参考本文 5.14 节配置好，否则请勿添加！</span><br><span class="line"></span><br><span class="line">sticky:</span><br><span class="line"># 文章置顶</span><br><span class="line"># 此项只有参考本文 5.15 节配置好，否则请勿添加！</span><br><span class="line"></span><br><span class="line">password:</span><br><span class="line"># 文章密码，此项只有参考教程：</span><br><span class="line"># http://shenzekun.cn/hexo的next主题个性化配置教程.html</span><br><span class="line"># 第 24 节，配置好，否则请勿添加！</span><br><span class="line"># 发现还是有 bug 的，就是右键在新标签中打开</span><br><span class="line"># 然后无论是否输入密码，都能看到内容</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
@@ -100,6 +103,25 @@
 </ol>
 <p>3）解决方案二:</p>
 <p>未完成。</p>
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>2、hexo安装主题</title>
+    <url>/2022/06/21/hexo-install-theme/</url>
+    <content><![CDATA[<h1 id="next主题安装"><a href="#next主题安装" class="headerlink" title="next主题安装"></a>next主题安装</h1><p>首先进入站点目录：例如</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/Users/zhongzunfa/xxx/blog/Hexo</span><br></pre></td></tr></table></figure>
+<p>在执行如下命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cd hexo</span><br><span class="line">$ git clone https://github.com/theme-next/hexo-theme-next.git themes/next</span><br></pre></td></tr></table></figure>
+
+<p>在站点配置文件 _config.yml 中修改主题名称</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">## Themes: https://hexo.io/themes/</span><br><span class="line">theme: next</span><br></pre></td></tr></table></figure>
+
+<p>重启一下,重新访问：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo s -debug</span><br></pre></td></tr></table></figure>
+<p>到此主题安装就完成了。 主题详细配置请看next主题配置。</p>
 ]]></content>
       <categories>
         <category>hexo</category>
@@ -190,25 +212,6 @@
 ]]></content>
       <categories>
         <category>next主题</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>2、hexo安装主题</title>
-    <url>/2022/06/21/hexo-install-theme/</url>
-    <content><![CDATA[<h1 id="next主题安装"><a href="#next主题安装" class="headerlink" title="next主题安装"></a>next主题安装</h1><p>首先进入站点目录：例如</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/Users/zhongzunfa/xxx/blog/Hexo</span><br></pre></td></tr></table></figure>
-<p>在执行如下命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cd hexo</span><br><span class="line">$ git clone https://github.com/theme-next/hexo-theme-next.git themes/next</span><br></pre></td></tr></table></figure>
-
-<p>在站点配置文件 _config.yml 中修改主题名称</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">## Themes: https://hexo.io/themes/</span><br><span class="line">theme: next</span><br></pre></td></tr></table></figure>
-
-<p>重启一下,重新访问：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo s -debug</span><br></pre></td></tr></table></figure>
-<p>到此主题安装就完成了。 主题详细配置请看next主题配置。</p>
-]]></content>
-      <categories>
-        <category>hexo</category>
       </categories>
   </entry>
   <entry>
