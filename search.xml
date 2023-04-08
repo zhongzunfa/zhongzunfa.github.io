@@ -40,11 +40,6 @@
       </categories>
   </entry>
   <entry>
-    <title></title>
-    <url>/2023/04/02/create-new-article-setting/</url>
-    <content><![CDATA[<h1 id="7、新建文章设置点："><a href="#7、新建文章设置点：" class="headerlink" title="7、新建文章设置点："></a>7、新建文章设置点：</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># ！！！！！！！！！！</span><br><span class="line"># 每一项的 : 后面均有一个空格</span><br><span class="line"># 且 : 为英文符号</span><br><span class="line"># ！！！！！！！！！！</span><br><span class="line"></span><br><span class="line">title:</span><br><span class="line"># 文章标题，可以为中文</span><br><span class="line"></span><br><span class="line">date:</span><br><span class="line"># 建立日期，如果自己手动添加，请按固定格式</span><br><span class="line"># 就算不写，页面每篇文章顶部的发表于……也能显示</span><br><span class="line"># 只要在主题配置文件中，配置了 created_at 就行</span><br><span class="line"># 那为什么还要自己加上？</span><br><span class="line"># 自定义文章发布的时间</span><br><span class="line"></span><br><span class="line">updated:</span><br><span class="line"># 更新日期，其它与上面的建立日期类似</span><br><span class="line"># 不过在页面每篇文章顶部，是更新于……</span><br><span class="line"># 在主题配置文件中，是 updated_at</span><br><span class="line"></span><br><span class="line">permalink:</span><br><span class="line"># 若站点配置文件下的 permalink 配置了 title</span><br><span class="line"># 则可以替换文章 URL 里面的 title（文章标题）</span><br><span class="line"></span><br><span class="line">categories:</span><br><span class="line"># 分类，支持多级，比如：</span><br><span class="line"># - technology</span><br><span class="line"># - computer</span><br><span class="line"># - computer-aided-art</span><br><span class="line"># 则为 technology/computer/computer-aided-art</span><br><span class="line"># （不适用于 layout: page）</span><br><span class="line"></span><br><span class="line">tags:</span><br><span class="line"># 标签</span><br><span class="line"># 多个可以这样写 [标签1,标签2,标签3]</span><br><span class="line"># （不适用于 layout: page）</span><br><span class="line"></span><br><span class="line">description:</span><br><span class="line"># 文章的描述，在每篇文章标题下方显示</span><br><span class="line"># 并且作为网页的 description 元数据</span><br><span class="line"># 如果不写，则自动取 &lt;!-- more --&gt;</span><br><span class="line"># 之前的文字作为网页的 description 元数据</span><br><span class="line"></span><br><span class="line">keywords:</span><br><span class="line"># 关键字，并且作为网页的 keywords 元数据</span><br><span class="line"># 如果不写，则自动取 tags 里的项</span><br><span class="line"># 作为网页的 keywords 元数据</span><br><span class="line"></span><br><span class="line">comments:</span><br><span class="line"># 是否开启评论</span><br><span class="line"># 默认值是 true</span><br><span class="line"># 要关闭写 false</span><br><span class="line"></span><br><span class="line">layout:</span><br><span class="line"># 页面布局，默认值是 post，默认值可以在</span><br><span class="line"># 站点配置文件中修改 default_layout</span><br><span class="line"># 另：404 页面可能用到，将其值改为 false</span><br><span class="line"></span><br><span class="line">type:</span><br><span class="line"># categories，目录页面</span><br><span class="line"># tags，标签页面</span><br><span class="line"># picture，用来生成 group-pictures</span><br><span class="line"># quote？</span><br><span class="line"># https://io-oi.me/tech/hello-world/</span><br><span class="line"></span><br><span class="line">photos:</span><br><span class="line"># Gallery support，用来支持画廊╱相册，用法如下：</span><br><span class="line"># - photo_url_1</span><br><span class="line"># - photo_url_2</span><br><span class="line"># - photo_url_3</span><br><span class="line"># https://io-oi.me/tech/hello-world/</span><br><span class="line"></span><br><span class="line">link:</span><br><span class="line"># 文章的外部链接</span><br><span class="line"># https://io-oi.me/tech/hello-world/</span><br><span class="line"></span><br><span class="line">image:</span><br><span class="line"># 自定义的文章摘要图片，只在页面展示，文章内消失</span><br><span class="line"># 此项只有参考本文 5.14 节配置好，否则请勿添加！</span><br><span class="line"></span><br><span class="line">sticky:</span><br><span class="line"># 文章置顶</span><br><span class="line"># 此项只有参考本文 5.15 节配置好，否则请勿添加！</span><br><span class="line"></span><br><span class="line">password:</span><br><span class="line"># 文章密码，此项只有参考教程：</span><br><span class="line"># http://shenzekun.cn/hexo的next主题个性化配置教程.html</span><br><span class="line"># 第 24 节，配置好，否则请勿添加！</span><br><span class="line"># 发现还是有 bug 的，就是右键在新标签中打开</span><br><span class="line"># 然后无论是否输入密码，都能看到内容</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
-  </entry>
-  <entry>
     <title>1、个人网站搭建流程</title>
     <url>/2022/06/05/blog-install/</url>
     <content><![CDATA[<h1 id="1、安装git"><a href="#1、安装git" class="headerlink" title="1、安装git"></a>1、安装git</h1><p>首先是安装git, mac参照文档进行操作即可。<br><a href="https://git-scm.com/download/mac">https://git-scm.com/download/mac</a></p>
@@ -89,6 +84,11 @@
       </categories>
   </entry>
   <entry>
+    <title></title>
+    <url>/2023/04/02/create-new-article-setting/</url>
+    <content><![CDATA[<h1 id="7、新建文章设置点："><a href="#7、新建文章设置点：" class="headerlink" title="7、新建文章设置点："></a>7、新建文章设置点：</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># ！！！！！！！！！！</span><br><span class="line"># 每一项的 : 后面均有一个空格</span><br><span class="line"># 且 : 为英文符号</span><br><span class="line"># ！！！！！！！！！！</span><br><span class="line"></span><br><span class="line">title:</span><br><span class="line"># 文章标题，可以为中文</span><br><span class="line"></span><br><span class="line">date:</span><br><span class="line"># 建立日期，如果自己手动添加，请按固定格式</span><br><span class="line"># 就算不写，页面每篇文章顶部的发表于……也能显示</span><br><span class="line"># 只要在主题配置文件中，配置了 created_at 就行</span><br><span class="line"># 那为什么还要自己加上？</span><br><span class="line"># 自定义文章发布的时间</span><br><span class="line"></span><br><span class="line">updated:</span><br><span class="line"># 更新日期，其它与上面的建立日期类似</span><br><span class="line"># 不过在页面每篇文章顶部，是更新于……</span><br><span class="line"># 在主题配置文件中，是 updated_at</span><br><span class="line"></span><br><span class="line">permalink:</span><br><span class="line"># 若站点配置文件下的 permalink 配置了 title</span><br><span class="line"># 则可以替换文章 URL 里面的 title（文章标题）</span><br><span class="line"></span><br><span class="line">categories:</span><br><span class="line"># 分类，支持多级，比如：</span><br><span class="line"># - technology</span><br><span class="line"># - computer</span><br><span class="line"># - computer-aided-art</span><br><span class="line"># 则为 technology/computer/computer-aided-art</span><br><span class="line"># （不适用于 layout: page）</span><br><span class="line"></span><br><span class="line">tags:</span><br><span class="line"># 标签</span><br><span class="line"># 多个可以这样写 [标签1,标签2,标签3]</span><br><span class="line"># （不适用于 layout: page）</span><br><span class="line"></span><br><span class="line">description:</span><br><span class="line"># 文章的描述，在每篇文章标题下方显示</span><br><span class="line"># 并且作为网页的 description 元数据</span><br><span class="line"># 如果不写，则自动取 &lt;!-- more --&gt;</span><br><span class="line"># 之前的文字作为网页的 description 元数据</span><br><span class="line"></span><br><span class="line">keywords:</span><br><span class="line"># 关键字，并且作为网页的 keywords 元数据</span><br><span class="line"># 如果不写，则自动取 tags 里的项</span><br><span class="line"># 作为网页的 keywords 元数据</span><br><span class="line"></span><br><span class="line">comments:</span><br><span class="line"># 是否开启评论</span><br><span class="line"># 默认值是 true</span><br><span class="line"># 要关闭写 false</span><br><span class="line"></span><br><span class="line">layout:</span><br><span class="line"># 页面布局，默认值是 post，默认值可以在</span><br><span class="line"># 站点配置文件中修改 default_layout</span><br><span class="line"># 另：404 页面可能用到，将其值改为 false</span><br><span class="line"></span><br><span class="line">type:</span><br><span class="line"># categories，目录页面</span><br><span class="line"># tags，标签页面</span><br><span class="line"># picture，用来生成 group-pictures</span><br><span class="line"># quote？</span><br><span class="line"># https://io-oi.me/tech/hello-world/</span><br><span class="line"></span><br><span class="line">photos:</span><br><span class="line"># Gallery support，用来支持画廊╱相册，用法如下：</span><br><span class="line"># - photo_url_1</span><br><span class="line"># - photo_url_2</span><br><span class="line"># - photo_url_3</span><br><span class="line"># https://io-oi.me/tech/hello-world/</span><br><span class="line"></span><br><span class="line">link:</span><br><span class="line"># 文章的外部链接</span><br><span class="line"># https://io-oi.me/tech/hello-world/</span><br><span class="line"></span><br><span class="line">image:</span><br><span class="line"># 自定义的文章摘要图片，只在页面展示，文章内消失</span><br><span class="line"># 此项只有参考本文 5.14 节配置好，否则请勿添加！</span><br><span class="line"></span><br><span class="line">sticky:</span><br><span class="line"># 文章置顶</span><br><span class="line"># 此项只有参考本文 5.15 节配置好，否则请勿添加！</span><br><span class="line"></span><br><span class="line">password:</span><br><span class="line"># 文章密码，此项只有参考教程：</span><br><span class="line"># http://shenzekun.cn/hexo的next主题个性化配置教程.html</span><br><span class="line"># 第 24 节，配置好，否则请勿添加！</span><br><span class="line"># 发现还是有 bug 的，就是右键在新标签中打开</span><br><span class="line"># 然后无论是否输入密码，都能看到内容</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
+  <entry>
     <title>4、github不支持密码改为token设置操作</title>
     <url>/2022/06/22/github-setting-token/</url>
     <content><![CDATA[<h1 id="github不支持密码改为token设置操作"><a href="#github不支持密码改为token设置操作" class="headerlink" title="github不支持密码改为token设置操作"></a>github不支持密码改为token设置操作</h1><p>1）clone 仓库提示不支持密码：</p>
@@ -100,25 +100,6 @@
 </ol>
 <p>3）解决方案二:</p>
 <p>未完成。</p>
-]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>2、hexo安装主题</title>
-    <url>/2022/06/21/hexo-install-theme/</url>
-    <content><![CDATA[<h1 id="next主题安装"><a href="#next主题安装" class="headerlink" title="next主题安装"></a>next主题安装</h1><p>首先进入站点目录：例如</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/Users/zhongzunfa/xxx/blog/Hexo</span><br></pre></td></tr></table></figure>
-<p>在执行如下命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cd hexo</span><br><span class="line">$ git clone https://github.com/theme-next/hexo-theme-next.git themes/next</span><br></pre></td></tr></table></figure>
-
-<p>在站点配置文件 _config.yml 中修改主题名称</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">## Themes: https://hexo.io/themes/</span><br><span class="line">theme: next</span><br></pre></td></tr></table></figure>
-
-<p>重启一下,重新访问：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo s -debug</span><br></pre></td></tr></table></figure>
-<p>到此主题安装就完成了。 主题详细配置请看next主题配置。</p>
 ]]></content>
       <categories>
         <category>hexo</category>
@@ -148,40 +129,6 @@
 ]]></content>
       <categories>
         <category>next主题</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>3、站点和github同步</title>
-    <url>/2022/06/22/site-github/</url>
-    <content><![CDATA[<h3 id="1、创建仓库"><a href="#1、创建仓库" class="headerlink" title="1、创建仓库"></a>1、创建仓库</h3><p>首先打开github, 点击new创建一个git仓库，需要注意点是仓库的前置必须要和用户名一致，例如我的用户名是zhongzunfa, 那么创建的仓库必须是<br>zhongzunfa.github.io ，具体如下所示<br><img src="/2022/06/22/site-github/16551295093438.jpg"><br>创建完成，创建文件index.html输出如下内容：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">&lt;title&gt;zzf&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;h1&gt;hello&lt;/h1&gt;</span><br><span class="line">    &lt;p&gt;hello world&lt;/p&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-<p>在点击setting文件，在点击pages可以看到</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Your site is published at https://zhongzunfa.github.io/</span><br></pre></td></tr></table></figure>
-<p>说明已经发布创建个人站点的git仓库已经创建完成，接下来在浏览器上进行验证， 直接用上面的地址访问可以看hello world显示。<br><img src="/2022/06/22/site-github/16551297926625.jpg" alt="-w381"></p>
-<h3 id="2、仓库中创建CNAME并且进行绑定"><a href="#2、仓库中创建CNAME并且进行绑定" class="headerlink" title="2、仓库中创建CNAME并且进行绑定"></a>2、仓库中创建CNAME并且进行绑定</h3><ol>
-<li>首先是配置腾讯云的绑定信息<br><img src="/2022/06/22/site-github/16550264842004.jpg" alt="-w1157"><br>注意点：配置是为zhongzunfa.github.io（<strong>配置自己对应的即可</strong>）</li>
-</ol>
-<p>2）配置github相关的信息<br>进入github博客仓库，点击setting，在左侧菜单中找到Pages点击，<br>先是选择&#x2F;root，接着在Custom domain中写入对应的应<br><img src="/2022/06/22/site-github/16550289781838.jpg" alt="-w1080"><br>等待显示，DNS check successful成功即可。</p>
-<p>3）接下来访问域名<br><img src="/2022/06/22/site-github/16559038041805.jpg" alt="-w708"></p>
-<h3 id="3、hexo和github中的仓库进行绑定"><a href="#3、hexo和github中的仓库进行绑定" class="headerlink" title="3、hexo和github中的仓库进行绑定"></a>3、hexo和github中的仓库进行绑定</h3><p>先配置发布信息:</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/zhongzunfa/zhongzunfa.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-<p>接下来安装插件：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-<p>在执行命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g</span><br><span class="line"></span><br><span class="line">// 注意如果提示密码问题需要去github上设置token</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<p>发布完看一下是否将之前存在的CNAME给覆盖替换掉了，如果不在需要重新新建，为了保证不被替换，在source目录下创建一个CNAME文件，<br>并且输入域名即可。<br><img src="/2022/06/22/site-github/16553926080125.jpg" alt="-w742"></p>
-<h3 id="4、github最新创新点-不一定要和用户名一样才能映射"><a href="#4、github最新创新点-不一定要和用户名一样才能映射" class="headerlink" title="4、github最新创新点(不一定要和用户名一样才能映射)"></a>4、github最新创新点(不一定要和用户名一样才能映射)</h3><p>可以配置多个自定义域名的映射，在不同的仓库中，比如我就做了两个映射<br>具体如下图所示：<br><img src="/2022/06/22/site-github/16550414478506.jpg" alt="-w1207"><br>it-space仓库</p>
-<p><img src="/2022/06/22/site-github/16550414858090.jpg" alt="-w1047"><br>zhongzunfa.github.io仓库<br>通过上述的配置后， 两个仓库都可以进行访问。</p>
-<p><strong>注意点1：</strong>是在custom domain中添加域名后，需要删除仓库中默认自动创建的CNAME文件，在重新创建CNAME文件， 在添次添加域名才会生效，具体不是很清楚是什么问题。</p>
-<p><strong>注意点2:</strong> 是在域名解析的时候配置的cname对应的值都是zhongzunfa.github.io, 具体如下图所示<br><img src="/2022/06/22/site-github/16550416026618.jpg" alt="-w1027"></p>
-<p><img src="/2022/06/22/site-github/16550416162750.jpg" alt="-w1071"></p>
-<h3 id="5、创建一个新的仓库存放源代码"><a href="#5、创建一个新的仓库存放源代码" class="headerlink" title="5、创建一个新的仓库存放源代码"></a>5、创建一个新的仓库存放源代码</h3><p>创建一个Hexo仓库，将数据提提交到上面就可以的。<br><img src="/2022/06/22/site-github/16553107519860.jpg" alt="-w970"></p>
-<p>如果之前存在了文件夹内容， 就先将其打包一下，删除文件夹， 在clone 仓库下来，在重新解压进去，在提交到GitHub即可</p>
-<p><img src="/2022/06/22/site-github/16556113432675.jpg" alt="-w556"></p>
-<p><strong>注意点</strong> : 存储放源代码和发布的仓库是不冲突的可以同时存在的。</p>
-]]></content>
-      <categories>
-        <category>hexo</category>
       </categories>
   </entry>
   <entry>
@@ -243,6 +190,59 @@
 ]]></content>
       <categories>
         <category>next主题</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>2、hexo安装主题</title>
+    <url>/2022/06/21/hexo-install-theme/</url>
+    <content><![CDATA[<h1 id="next主题安装"><a href="#next主题安装" class="headerlink" title="next主题安装"></a>next主题安装</h1><p>首先进入站点目录：例如</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/Users/zhongzunfa/xxx/blog/Hexo</span><br></pre></td></tr></table></figure>
+<p>在执行如下命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cd hexo</span><br><span class="line">$ git clone https://github.com/theme-next/hexo-theme-next.git themes/next</span><br></pre></td></tr></table></figure>
+
+<p>在站点配置文件 _config.yml 中修改主题名称</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">## Themes: https://hexo.io/themes/</span><br><span class="line">theme: next</span><br></pre></td></tr></table></figure>
+
+<p>重启一下,重新访问：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo s -debug</span><br></pre></td></tr></table></figure>
+<p>到此主题安装就完成了。 主题详细配置请看next主题配置。</p>
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>3、站点和github同步</title>
+    <url>/2022/06/22/site-github/</url>
+    <content><![CDATA[<h3 id="1、创建仓库"><a href="#1、创建仓库" class="headerlink" title="1、创建仓库"></a>1、创建仓库</h3><p>首先打开github, 点击new创建一个git仓库，需要注意点是仓库的前置必须要和用户名一致，例如我的用户名是zhongzunfa, 那么创建的仓库必须是<br>zhongzunfa.github.io ，具体如下所示<br><img src="/2022/06/22/site-github/16551295093438.jpg"><br>创建完成，创建文件index.html输出如下内容：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">&lt;title&gt;zzf&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;h1&gt;hello&lt;/h1&gt;</span><br><span class="line">    &lt;p&gt;hello world&lt;/p&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<p>在点击setting文件，在点击pages可以看到</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Your site is published at https://zhongzunfa.github.io/</span><br></pre></td></tr></table></figure>
+<p>说明已经发布创建个人站点的git仓库已经创建完成，接下来在浏览器上进行验证， 直接用上面的地址访问可以看hello world显示。<br><img src="/2022/06/22/site-github/16551297926625.jpg" alt="-w381"></p>
+<h3 id="2、仓库中创建CNAME并且进行绑定"><a href="#2、仓库中创建CNAME并且进行绑定" class="headerlink" title="2、仓库中创建CNAME并且进行绑定"></a>2、仓库中创建CNAME并且进行绑定</h3><ol>
+<li>首先是配置腾讯云的绑定信息<br><img src="/2022/06/22/site-github/16550264842004.jpg" alt="-w1157"><br>注意点：配置是为zhongzunfa.github.io（<strong>配置自己对应的即可</strong>）</li>
+</ol>
+<p>2）配置github相关的信息<br>进入github博客仓库，点击setting，在左侧菜单中找到Pages点击，<br>先是选择&#x2F;root，接着在Custom domain中写入对应的应<br><img src="/2022/06/22/site-github/16550289781838.jpg" alt="-w1080"><br>等待显示，DNS check successful成功即可。</p>
+<p>3）接下来访问域名<br><img src="/2022/06/22/site-github/16559038041805.jpg" alt="-w708"></p>
+<h3 id="3、hexo和github中的仓库进行绑定"><a href="#3、hexo和github中的仓库进行绑定" class="headerlink" title="3、hexo和github中的仓库进行绑定"></a>3、hexo和github中的仓库进行绑定</h3><p>先配置发布信息:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/zhongzunfa/zhongzunfa.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<p>接下来安装插件：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p>在执行命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g</span><br><span class="line"></span><br><span class="line">// 注意如果提示密码问题需要去github上设置token</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<p>发布完看一下是否将之前存在的CNAME给覆盖替换掉了，如果不在需要重新新建，为了保证不被替换，在source目录下创建一个CNAME文件，<br>并且输入域名即可。<br><img src="/2022/06/22/site-github/16553926080125.jpg" alt="-w742"></p>
+<h3 id="4、github最新创新点-不一定要和用户名一样才能映射"><a href="#4、github最新创新点-不一定要和用户名一样才能映射" class="headerlink" title="4、github最新创新点(不一定要和用户名一样才能映射)"></a>4、github最新创新点(不一定要和用户名一样才能映射)</h3><p>可以配置多个自定义域名的映射，在不同的仓库中，比如我就做了两个映射<br>具体如下图所示：<br><img src="/2022/06/22/site-github/16550414478506.jpg" alt="-w1207"><br>it-space仓库</p>
+<p><img src="/2022/06/22/site-github/16550414858090.jpg" alt="-w1047"><br>zhongzunfa.github.io仓库<br>通过上述的配置后， 两个仓库都可以进行访问。</p>
+<p><strong>注意点1：</strong>是在custom domain中添加域名后，需要删除仓库中默认自动创建的CNAME文件，在重新创建CNAME文件， 在添次添加域名才会生效，具体不是很清楚是什么问题。</p>
+<p><strong>注意点2:</strong> 是在域名解析的时候配置的cname对应的值都是zhongzunfa.github.io, 具体如下图所示<br><img src="/2022/06/22/site-github/16550416026618.jpg" alt="-w1027"></p>
+<p><img src="/2022/06/22/site-github/16550416162750.jpg" alt="-w1071"></p>
+<h3 id="5、创建一个新的仓库存放源代码"><a href="#5、创建一个新的仓库存放源代码" class="headerlink" title="5、创建一个新的仓库存放源代码"></a>5、创建一个新的仓库存放源代码</h3><p>创建一个Hexo仓库，将数据提提交到上面就可以的。<br><img src="/2022/06/22/site-github/16553107519860.jpg" alt="-w970"></p>
+<p>如果之前存在了文件夹内容， 就先将其打包一下，删除文件夹， 在clone 仓库下来，在重新解压进去，在提交到GitHub即可</p>
+<p><img src="/2022/06/22/site-github/16556113432675.jpg" alt="-w556"></p>
+<p><strong>注意点</strong> : 存储放源代码和发布的仓库是不冲突的可以同时存在的。</p>
+]]></content>
+      <categories>
+        <category>hexo</category>
       </categories>
   </entry>
 </search>
